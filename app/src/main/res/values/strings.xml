@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">幫你記 APP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">幫你記 APP</string>
+    <string name="nav_header_subtitle">HelpYouMemory for your cash</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">語言設定</string>
+
+    <string name="menu_home">主頁</string>
+    <string name="menu_gallery">不開心就點一下</string>
+    <string name="menu_total">統計</string>
+
+    <string name="menu_new">新增支出/收入</string>
+
+    <string name="income">收入</string>
+    <string name="expend">支出</string>
+
+    <string name="new_item">新增</string>
+
+    <!--  支出項目分類字串  -->
+    <string name="cat_food">飲食</string>
+    <string name="cat_traffic">交通</string>
+    <string name="cat_entertainment">娛樂</string>
+
+    <!--  收入項目分類字串  -->
+    <string name="cat_salary">薪水</string>
+    <string name="cat_save">儲蓄</string>
+    <string name="cat_invest">投資</string>
+
+    <!--  月份  -->
+    <string-array name="month_selected">
+        <item>-</item>
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一月</item>
+        <item>十二月</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_info">操作說明</string>
+
+    <string name="confirm">確定</string>
+    <string name="cancel">取消</string>
+    <string name="default_text">預設語言</string>
+    <string name="text_date">日期</string>
+    <string name="text_type">類型</string>
+    <string name="text_name">名稱</string>
+    <string name="text_cash">金額</string>
+    <string name="text_year">年份</string>
+    <string name="text_month">月份</string>
+    <string name="text_earn">總計</string>
+
+    <string name="text_canDelete">可以刪</string>
+    <string name="text_noDelete">不可刪</string>
+    <string name="hint_date">請選擇日期</string>
+    <string name="btn_choose">選擇日期</string>
+    <string name="text_typeChoose">支出/收入</string>
+    <string name="hint_input">輸入項目名稱</string>
+    <string name="back_home">返回主頁</string>
+    <string name="sta_type">分類統計</string>
+    <string name="sta_inout">收支統計</string>
+
+</resources>

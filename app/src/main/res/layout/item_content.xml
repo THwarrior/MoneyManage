@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginTop="2sp"
+    android:layout_marginEnd="10sp"
+    android:layout_marginStart="10sp"
+    android:background="@drawable/edit_background"
+    android:backgroundTint="@null">
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="30sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22sp"
+        android:layout_marginBottom="22sp"
+        android:textAlignment="center"
+        android:text="XXXX"
+        android:textColor="#07a"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/month"
+        android:layout_width="15sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22sp"
+        android:layout_marginBottom="22sp"
+        android:textAlignment="center"
+        android:text="OO"
+        android:textColor="#07a"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="15sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="22sp"
+        android:layout_marginBottom="22sp"
+        android:textAlignment="center"
+        android:text="DD"
+        android:textColor="#07a"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center_vertical"
+        android:text="category"
+        android:textColor="#07a"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center_vertical"
+        android:text="name"
+        android:textColor="#07a"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/cash"
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center_vertical"
+        android:text="cash"
+        android:textColor="#07a"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="40sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="2sp"
+        android:layout_marginBottom="2sp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:focusable="false"
+        android:textSize="10sp"
+        android:text="刪除"
+        android:backgroundTint="@drawable/deletebtn_back_disable"
+        android:enabled="false"/>
+
+</LinearLayout>

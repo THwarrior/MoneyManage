@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/addItem"
+    android:background="@color/white"
+    tools:context=".addItemActivity">
+
+    <include layout="@layout/date_choose_bar" />
+
+    <LinearLayout
+        android:id="@+id/inputCategory"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_below="@+id/dateChoose"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_type"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="5sp"
+            android:layout_gravity="center_vertical"/>
+
+        <Spinner
+            android:id="@+id/input_category"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_gravity="center_vertical"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/text_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_weight="1"
+            android:text="@string/text_typeChoose"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/input_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="10sp"
+            android:layout_gravity="center_vertical"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputItemName"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_below="@+id/inputCategory"
+        android:orientation="horizontal"
+         >
+
+        <TextView
+            android:id="@+id/text_itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_name"
+            android:textSize="15sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="5sp"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/input_itemName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="20sp"
+            android:layout_gravity="center_vertical"
+            android:autofillHints="輸入項目名稱"
+            android:hint="@string/hint_input"
+            android:textSize="20sp"
+            android:inputType="text"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputCash"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_below="@+id/inputItemName"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_cash"
+            android:textSize="15sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="5sp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textSize="30sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/input_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/calculator" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_below="@+id/calculator"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_backHome"
+            android:text="@string/back_home"
+            android:textSize="18sp"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:text="@string/confirm"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="150sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="20sp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_background"
+            android:textSize="18sp"
+            app:backgroundTint="@null"
+             />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
